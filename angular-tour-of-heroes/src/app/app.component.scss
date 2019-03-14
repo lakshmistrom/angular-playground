@@ -1,0 +1,79 @@
+// colors
+$blue: #369;
+$grey: #444;
+$light-grey: #888;
+$white: #eee;
+$hover-grey: #cfd8dc;
+$disabled-grey: #aaa;
+$act-hov-blue: #039be5;
+$dark-grey: #607D8B;
+
+// fonts
+$hero-fonts: Arial, Helvetica, sans-serif;
+$smaller-fonts: Cambria, Georgia;
+
+/* Application-wide Styles */
+h1 {
+    color: $blue;
+    font-family: $hero-fonts;
+    font-size: 250%;
+}
+h2, h3 {
+    color: $grey;
+    font-family: $hero-fonts;
+    font-weight: lighter;
+}
+body {
+    margin: 2em;
+}
+body, input[type="text"], button {
+    color: $light-grey;
+    font-family: $smaller-fonts;
+}
+a {
+    cursor: pointer;
+    cursor: hand;
+}
+button {
+    font-family: Arial;
+    background-color: $white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+}
+button:hover {
+    background-color: $hover-grey;
+}
+button:disabled {
+    background-color: $white;
+    color: $disabled-grey;
+    cursor: auto;
+}
+  
+/* Navigation link styles */
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: $white;
+    border-radius: 4px;
+}
+nav a:visited, a:link {
+    color: $dark-grey;
+}
+nav a:hover {
+    color: $act-hov-blue;
+    background-color: $hover-grey;
+}
+nav a.active {
+    color: $act-hov-blue;
+}
+
+/* everywhere else */
+* {
+    font-family: $hero-fonts;
+}
